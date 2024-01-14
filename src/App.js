@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import MovieCard from "./MovieCard";
+import Helmet from 'react-helmet';
 
 import './App.css';
 import SearchIcon from './search.svg'
@@ -60,6 +61,9 @@ const App = () =>{
             
         </div>
     );
+    <Helmet>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
+    </Helmet>
 }
 
 export default App;

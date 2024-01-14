@@ -23,6 +23,9 @@ const App = () =>{
 
     return(
         <div className="app">
+            <Helmet>
+                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
+            </Helmet>
             <h1>MovieLand</h1>
 
             <div className="search">
@@ -50,12 +53,9 @@ const App = () =>{
                     </div>
                 )
             }
-            
         </div>
+        
     );
-    <Helmet>
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
-    </Helmet>
 }
 
 export default App;
